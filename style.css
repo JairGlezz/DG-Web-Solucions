@@ -1,0 +1,363 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9fafc;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.mi-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo img {
+    width: 120px;
+}
+
+.menu-enlaces {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.menu-enlaces a {
+    text-decoration: none;
+    color: #0b2c4d;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.menu-enlaces .btn-nav {
+    background-color: #0056b3;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.menu-enlaces .btn-nav:hover {
+    background-color: #004085;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    color: #0b2c4d;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.btn-cotizar {
+    display: inline-block;
+    background-color: #ffcc4d;
+    color: #0b2c4d;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.btn-cotizar:hover {
+    transform: translateY(-2px);
+}
+
+.hero-image img {
+    max-width: 450px;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Servicios */
+.servicios-section {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.servicios-section h2 {
+    color: #0b2c4d;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.tarjetas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid #eaeaea;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .icono {
+    margin-bottom: 15px;
+}
+
+.icons {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.card h3 {
+    color: #0b2c4d;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* CTA Sección (Contacto y Cotización) */
+.cta-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: #0b2c4d;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.cta-box {
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    text-align: left;
+}
+
+.cta-col h3 {
+    color: #0b2c4d;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.cta-col p {
+    color: #555;
+    margin-bottom: 12px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Corrección clave para iconos pequeños alineados al texto */
+.telefono {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.btn-enviar {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffcc4d;
+    color: #0b2c4d;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 5px;
+    transition: background 0.2s;
+}
+
+.btn-enviar:hover {
+    background-color: #f3be35;
+}
+
+/* Footer */
+footer {
+    background-color: #0b2c4d;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-logo img {
+    width: 90px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-logo span {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #d0d9e2;
+}
+
+footer .copy {
+    font-size: 12px;
+    color: #8da2b5;
+    margin-top: 15px;
+}
+
+/* --- Media Queries para Versión Móvil --- */
+@media (max-width: 768px) {
+    .mi-navbar {
+        padding: 15px 20px;
+    }
+
+    .menu-enlaces {
+        display: none; /* Aquí puedes activar tu menú hamburguesa si lo requieres */
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        padding: 40px 5px;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .servicios-section, .cta-section {
+        padding: 40px 5px;
+    }
+
+    .cta-box {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .cta-col {
+        text-align: center;
+    }
+
+    .cta-col p {
+        justify-content: center;
+    }
+}
+
+
+/* --- Estilos del Botón Hamburguesa --- */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #0056b3;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* --- Media Query para dispositivos móviles --- */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Muestra el botón hamburguesa en móviles */
+    }
+
+    .mi-navbar {
+        padding: 15px 20px;
+        position: relative;
+    }
+
+    /* Ocultar el menú por defecto en móvil y transformarlo en panel desplegable */
+    .menu-enlaces {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 25px 0;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+        display: none; /* Oculto inicialmente */
+    }
+
+    /* Clase que activa el menú mediante JS */
+    .menu-enlaces.active {
+        display: flex;
+    }
+
+    /* Animación del botón hamburguesa a una "X" cuando está activo */
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
